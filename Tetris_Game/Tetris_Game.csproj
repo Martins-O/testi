@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Block.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Assets\Background.png" />
     <None Remove="Assets\Block-Empty.png" />
     <None Remove="Assets\Block-I.png" />
@@ -51,7 +47,6 @@
     <Resource Include="Assets\TilePurple.png" />
     <Resource Include="Assets\TileRed.png" />
     <Resource Include="Assets\TileYellow.png" />
-    <Resource Include="Block.cs" />
   </ItemGroup>
 
 </Project>

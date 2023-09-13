@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace tetris
+namespace Tetris_Game
 {
     abstract class Block
     {
-        protected abstract Position[][] Tiles{ get; }
+        protected abstract Position[][] Tiles { get; }
         protected abstract Position StartOffset { get; }
         public abstract int id { get; }
 
@@ -22,7 +18,7 @@ namespace tetris
 
         public IEnumerable<Position> TilesPositions()
         {
-            foreach(Position p in Tiles[rotationState])
+            foreach (Position p in Tiles[rotationState])
             {
                 yield return new Position(p.Row, p.Column + offset.Column);
             }
@@ -35,7 +31,7 @@ namespace tetris
 
         public void RotateCCw()
         {
-            if(rotationState == 0)
+            if (rotationState == 0)
             {
                 rotationState = Tiles.Length - 1;
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tetris
+namespace Tetris_Game
 {
     internal class GameState
     {
@@ -28,6 +28,7 @@ namespace tetris
             GameGrid = new GameGrid(22, 10);
             BlockQueue = new BlockQueue();
             CurrentBlock = BlockQueue.GetAndUpdate();
+           
         }
 
         public bool BlockFits()

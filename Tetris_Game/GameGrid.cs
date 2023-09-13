@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tetris
+namespace Tetris_Game
 {
     internal class GameGrid
     {
@@ -14,7 +14,7 @@ namespace tetris
 
         public int this[int r, int c]
         {
-            get => grid[r, c];
+            get => grid[r, c] - 1;
             set => grid[r, c] = value;
         }
 
